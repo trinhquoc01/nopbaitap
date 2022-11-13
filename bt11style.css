@@ -1,4 +1,7 @@
-
+body{
+    padding-left: 20%;
+    padding-right: 20%;
+}
 .indam {
     font-weight: bold;
     font-size: 18px;
@@ -16,21 +19,26 @@ b{
     text-decoration-line: underline;
 }
 p{
-
     margin-left: 20px;
 }
+
+p.footer{
+    margin-left: 0px;
+}
+
 hr{
-    height:6px;
     width:100%;
-    background-color: #e86868;
+    border-bottom: 1.5px dashed red;
+    border-top: 0px #0000;
 }
 ul{
     width: 300px;
     float: right;
     list-style: none;
+    margin-top: 55px;
 }
 li{
-    font-size:18px ;
+    font-size:13px ;
     text-align: right;
     line-height: 1.5;
 }
@@ -38,5 +46,5 @@ li{
     margin-left: 60px;
 }
 .khoangcach2{
-    margin-left: 205px;
+    margin-left: 185px;
 }
