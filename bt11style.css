@@ -48,3 +48,7 @@ li{
 .khoangcach2{
     margin-left: 185px;
 }
+
+hr.dashed {
+    border-top: 3px dashed #bbb;
+}

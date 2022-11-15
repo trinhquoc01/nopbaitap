@@ -1,0 +1,33 @@
+body{
+    background-color: white;
+}
+
+#main{
+    width:70%;
+    margin: auto;
+}
+
+.divItem{
+    max-width: 300px;
+    height: auto;
+    float:left;
+    margin: 10px;
+    padding:5px;
+    text-align: center;
+}
+
+.imageItem{
+    width: 260px;
+    height: 300px;
+    margin: 10px;
+    object-fit: fill;
+}
+
+.textCenter{
+    margin: 8px;
+}
+
+.linkItem{
+    color: #6767c7;
+    text-decoration: underline;
+}
