@@ -1,9 +1,10 @@
 body{
     background-color: white;
+    margin: 0px;
 }
 
 #main{
-    width:70%;
+    width:90%;
     margin: auto;
 }
 
