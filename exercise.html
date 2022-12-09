@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>REGISTER</title>
+  <link rel="stylesheet" href="exercise.css">
+</head>
+<body>
+    <div class="body-content">
+            <div class="container">
+                <h1> SEGISTER</h1>
+            </div>
+            <div class="container-1">
+                <form action="">
+                    <div class="form-item">
+                        <input type="text" name="userName" id="userName" placeholder="Username">
+                    </div>
+                    <div class="form-item-password">
+                    <input type="password" name="passWord" id="password" placeholder="Password">
+
+                    </div>
+                    <div class="form-item-password">
+                        <input type="password" name="passWord" id="confirmPassword" placeholder="Confirm Password">
+                    </div>
+                    <div class="form-item-email">
+                        <input type="email" name="email" id="email" placeholder="Email">
+                    </div>
+
+                    <div class="remember-box">
+                        <input type="checkbox" name="remember" id="remember">
+                        <p>I accept the Terms of Use & Privacy Policy</p>
+                    </div>
+                    <div class="form-btns">
+
+                        <button class="signup" type="submit" disabled>Sign Up</button>
+                        <div class="options">
+                            Already have an account?<a href="#">Login here</a>
+                        </div>
+
+
+                    </div>
+                </form>
+            </div>
+    </div>
+    <script>
+        let signUp = document.querySelector('.signup')
+        let termCond = document.querySelector('#remember')
+        let password = document.querySelector('#password')
+        let confirmPassword = document.querySelector('#confirmPassword')
+        const passwordPattern = /^[a-zA-Z0-9]{8,15}$/;
+
+        password.addEventListener('keyup', event => {
+            if (passwordPattern.test(password.value)) {
+                password.style.borderColor = 'green'
+            } else {
+                password.style.borderColor = 'Red'
+            }
+        })
+        password.addEventListener('focusout', event => {
+            if (passwordPattern.test(password.value)) {
+                password.style.borderColor = '#e1dede69'
+            } else {
+                password.style.borderColor = 'Red'
+            }
+        })
+
+        confirmPassword.addEventListener(['keyup'], event => {
+            if (passwordPattern.test(password.value) && password.value === confirmPassword.value) {
+                confirmPassword.style.borderColor = 'green'
+            } else {
+                confirmPassword.style.borderColor = 'Red'
+            }
+        })
+        confirmPassword.addEventListener('focusout', event => {
+            if (passwordPattern.test(confirmPassword.value)) {
+                confirmPassword.style.borderColor = '#e1dede69'
+            } else {
+                confirmPassword.style.borderColor = 'Red'
+            }
+        })
+
+        termCond.addEventListener('change', () => {
+            if (termCond.checked === true) {
+                signUp.disabled = false;
+            } else if (termCond.checked === false) {
+                signUp.disabled = true;
+            }
+        })
+    </script>
+</body>
+</html>
