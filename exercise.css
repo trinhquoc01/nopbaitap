@@ -1,154 +1,127 @@
-html {
-
-    background: rgba(71, 162, 40, 0.96);
+body {
+    background-color: #11998e;
 }
-.container{
-    width: 510px;
-    height: 200px;
+
+.my-form {
+    margin: 5rem auto;
+    background-color: #FFFFFF;
+    width: 450px;
+}
+
+header {
+    height: 120px;
+    background-color: #6a3093;
+}
+
+.heading-icon {
+    height: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: auto;
-    background: rgb(110, 27, 110);
+}
 
-}
-.container-1{
-    width: 510px;
-    height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    background: rgb(255, 255, 255);
-}
-h1{
+.heading-icon i {
     color: #FFFFFF;
-    height: 10px;
-    margin-bottom: unset;
-}
-form {
-    display: flex;
-    flex-direction: column;
+    font-size: 2rem;
 }
 
-.form-item {
-    margin: 5px;
-    padding-bottom: 10px;
-    display: flex;
+.heading-text {
+    height: 40%;
+    text-align: center;
 }
 
-.form-item input {
-    width: 150px;
+.heading-text h2 {
+    color: #FFFFFF;
+}
+
+.main-wrap {
+    padding: 5rem 4rem 1rem;
+    background-color: #FFFFFF;
+}
+
+.my-row {
+    margin-bottom: 1.5rem;
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-row.input-checkbox {
     height: 30px;
-    border: 2px solid #e1dede69;
-    border-radius: 5px;
-    background: rgba(246, 245, 245, 0.54);
-    color: black;
-    text-align: left;
-    margin: 0 5px;
-}
-
-.form-item-email {
-    margin: 0 5px;
-    padding-bottom: 10px;
     display: flex;
-    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
 
-.form-item-email input {
-    height: 30px;
-    border: 2px solid #e1dede69;
-    border-radius: 5px;
-    background: white;
-    color: black;
-    text-align: left;
-    margin: 0 5px;
+.my-row input {
+    background-color: #dfdede;
+    border: none;
+    padding-left: 3rem;
+    width: 85%;
+    height: 100%;
 }
 
-.form-item-password {
-    margin: 5px;
-    padding-bottom: 10px;
+.my-row input:focus-visible {
+    outline: none;
+}
+
+.input-icon {
+    background-color: #6f2aa1;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 17%;
+    height: 100%;
 }
 
-.form-item-password input {
-    height: 30px;
-    border: 2px solid #e1dede69;
-    border-radius: 5px;
-    background: white;
-    color: black;
-    text-align: left;
-    margin: 5px 5px;
-}
-.remember-box {
-    margin: auto;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    color: white;
-    display: flex;
+.input-icon i {
+    color: #FFFFFF;
+    font-size: 1.3rem;
 }
 
-.remember-box a {
+input::placeholder {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+input[type=checkbox] {
+    width: 25px;
+    height: 25px;
+    margin-left: 8px;
+}
+
+.my-row>label>a {
+    color: #6a3093;
     text-decoration: none;
-    color: white;
-    margin-left: 30px;
 }
 
-.remember-box a:hover {
-    color: grey;
+.my-row label {
+    margin-left: 1rem;
+    color: #878787;
+    font-weight: 500;
 }
 
-.form-btns {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    padding: 10px 0;
+button.my-button:hover {
+    background-color: #333;
 }
 
-.form-btns button {
-    margin: auto;
-    font-size: 20px;
-    padding: 5px 15px;
-    border: 0;
-    border-radius: 15px;
-    color: rgb(75, 61, 61);
-    background: #fbba50;
-    width: 280px;
-    cursor: pointer;
-}
-
-.form-btns button:disabled {
-    background: #8f8b85 !important;
-    color: rgb(131, 120, 120) !important;
-    cursor: not-allowed;
-}
-
-.form-btns button:hover {
-    background: #d88a0c;
-    color: antiquewhite;
-}
-
-.options {
-    padding-top: 15px;
-    margin: auto;
-    color: white;
-    font-size: 13px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.options a {
-    font-size: 13px;
-    color: white;
-}
-
-.options a:hover {
-    color: rgb(167, 165, 165);
+button.my-button {
+    background-color: #6a3093;
+    border: none;
+    color: #FFFFFF;
+    font-weight: 600;
+    width: 100%;
+    padding: .7rem;
+    font-size: 1.3rem;
 }
 
 p {
-    text-align: center;
-    font-size: 12px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgba(23, 2, 2, 0.09);
+    color: #878787;
+    font-weight: 500;
+}
+
+.my-row>p>a {
+    text-decoration: none;
+    color: #8c7e7e;
 }
