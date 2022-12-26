@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1 id="x-name">Tên một người nào đó</h1>
+
+    <ul id="thucdon">
+
+
+    </ul>
+    <script type="text/javascript">
+        var menu = [
+            "Phở gà",
+            "Phở bò",
+            "Xôi lạc",
+            "Xôi xéo",
+        ]
+        var td = document.getElementById("thucdon");
+        for (var i = 0;i< menu.length;i++){
+            var pt = `<li>${menu[i]}</i>`;
+            td.innerHTML += pt;
+        }
+        var obj1 = {
+            name: "Lê Anh Thư",
+            age: 18,
+            address: "Hà Nội",
+            gender: "Nữ"
+        }
+        console.log(obj1.name);
+        var xh1 = document.getElementById("x-name");
+        setTimeout(function (){
+            // xh1.innerText = "ádffsb";
+            xh1.innerHTML = "<i> Lê Annh Thử </i>";
+            },3000);
+            xh1.style.color = "#ff4900";
+            xh1.style.background = "#a4ff00"
+    </script>
+</body>
+</html>
