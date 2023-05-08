@@ -1,6 +1,6 @@
 --2--
 create table Customer(
-CustomerId int primary key,
+CustomerId int primary key identity(1,1),
 Name nvarchar(50) not null,
 City nvarchar(50) not null,
 Country nvarchar(50) not null,
@@ -14,7 +14,7 @@ Balance money,
 MinAccount money not null,
 );
 create table CustomerTransaction(
-TransactionId int primary key,
+TransactionId int primary key identity(1,1),
 AccountNumber char(9) not null foreign key references CustomerAccount(AccountNumber),
 TranssactionDate smalldatetime not null,
 Amount money not null,
@@ -23,20 +23,20 @@ DepositorWithdraw bit not null,
 
 --3--
 
-insert into Customer(CustomerId,Name,City,Country,Phone,Email) values
-(1,'Nguyen Thi Nu','Da Nang','Viet Nam','098329572042','zxcvbnm@gmail.com'),
-(2,'Trinh Cong Son','LonDon','England','089287547856','abcxyz@gmail.com'),
-(3,'Do Thi Lan','Ha Noi','Viet Nam','03797284629','nguyena1@gmail.com');
+insert into Customer(Name,City,Country,Phone,Email) values
+('Nguyen Thi Nu','Da Nang','Viet Nam','098329572042','zxcvbnm@gmail.com'),
+('Trinh Cong Son','LonDon','England','089287547856','abcxyz@gmail.com'),
+('Do Thi Lan','Ha Noi','Viet Nam','03797284629','nguyena1@gmail.com');
 
 insert into CustomerAccount(AccountNumber,CustomerId,Balance,MinAccount) values
 ('752892749',1,3000000,50),
 ('749274932',2,1000000,100),
 ('729928492',3,500000,50);
 
-insert into CustomerTransaction(TransactionId,AccountNumber,TranssactionDate,Amount,DepositorWithdraw) values
-(1,'752892749','2019-10-11',2000,1),
-(2,'749274932','2022-01-30',30000,0),
-(3,'729928492','2023-09-24',400000,1);
+insert into CustomerTransaction(AccountNumber,TranssactionDate,Amount,DepositorWithdraw) values
+('752892749','2019-10-11',2000,1),
+('749274932','2022-01-30',30000,0),
+('729928492','2023-09-24',400000,1);
 --4--
 
 select * from Customer where City = 'Ha Noi';
