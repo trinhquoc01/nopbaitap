@@ -15,33 +15,33 @@ public class Account {
         boolean customerCodestandard = false;
         boolean accNumberstandard = false;
         while (!customerCodestandard) {
-            System.out.print("Enter customerCode: ");
+            System.out.print("Nhập mã khách hàng: ");
             String customerCodeInput = scanner.nextLine();
             if (customerCodeInput.length() != 5) {
-                System.out.println("customerCode must be 5 characters long");
+                System.out.println("Mã khách hàng phải chứa 5 kí tự");
                 continue;
             }
             customerCodestandard = true;
             customerCode = customerCodeInput;
         }
-        System.out.print("Enter customerName: ");
+        System.out.print("Nhập tên khách hàng: ");
         customerName = scanner.nextLine();
         while (!accNumberstandard) {
-            System.out.print("Enter accNumber: ");
+            System.out.print("Nhập Số tài khoản : ");
             String accNumberInput = scanner.nextLine();
             Pattern pattern = Pattern.compile("[0-9]+");
             Matcher matcher = pattern.matcher(accNumberInput);
 
             if (!matcher.matches()) {
-                System.out.println("accNumber must be a number");
+                System.out.println("số tài khoản phải dạng số");
                 continue;
             }
             if (accNumberInput.length() != 6) {
-                System.out.println("accNumber must be 6 digits");
+                System.out.println("số tài khoản phải chứ 5 kí tự");
                 continue;
             }
             if (!accNumberInput.startsWith("100")) {
-                System.out.println("accNumber must start with 100");
+                System.out.println("số tài khoản phải bắt đầu bằng 100");
                 continue;
             }
             accNumberstandard = true;
@@ -50,7 +50,7 @@ public class Account {
     }public void depositAndWithdraw(long amount, int type) {
         if (type == 0) {
             if (amount < 0) {
-                System.out.println("Amount must be a positive number");
+                System.out.println("Số tièn phải là só dương");
                 return;
             }
             this.amount += amount;
@@ -60,7 +60,7 @@ public class Account {
             this.amount -= amount;
             return;
         }
-        System.out.println("Non-sufficient funds");
+        System.out.println("Bạn không đủ tiền");
     }
 
     @Override
