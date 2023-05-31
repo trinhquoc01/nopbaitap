@@ -5,8 +5,6 @@ public class MainClass {
         try {
             JSONManagement json = new JSONManagement();
             json.readJSONFromAPI();
-            UserMa user = new UserMa();
-            user.readUserFromAPI();
         } catch (Exception e ) {
             System.out.println(e.getMessage());
         }
