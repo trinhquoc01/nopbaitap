@@ -7,7 +7,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 
 public class PhotoController {
-    String INSERT_PHOTO = "INSERT INTO post VALUES(?,?,?,?,?)";
+    String INSERT_PHOTO = "INSERT INTO photo VALUES(?,?,?,?,?)";
 
     public boolean insertNewPhoto(Photo photo) throws Exception {
         Connection conn = null;
