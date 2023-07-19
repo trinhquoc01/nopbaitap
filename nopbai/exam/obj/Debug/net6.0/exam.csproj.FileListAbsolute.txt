@@ -1,0 +1,15 @@
+C:\Users\Trinh Quoc\source\repos\exam\bin\Debug\net6.0\exam.exe
+C:\Users\Trinh Quoc\source\repos\exam\bin\Debug\net6.0\exam.deps.json
+C:\Users\Trinh Quoc\source\repos\exam\bin\Debug\net6.0\exam.runtimeconfig.json
+C:\Users\Trinh Quoc\source\repos\exam\bin\Debug\net6.0\exam.dll
+C:\Users\Trinh Quoc\source\repos\exam\bin\Debug\net6.0\exam.pdb
+C:\Users\Trinh Quoc\source\repos\exam\obj\Debug\net6.0\exam.csproj.AssemblyReference.cache
+C:\Users\Trinh Quoc\source\repos\exam\obj\Debug\net6.0\exam.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Trinh Quoc\source\repos\exam\obj\Debug\net6.0\exam.AssemblyInfoInputs.cache
+C:\Users\Trinh Quoc\source\repos\exam\obj\Debug\net6.0\exam.AssemblyInfo.cs
+C:\Users\Trinh Quoc\source\repos\exam\obj\Debug\net6.0\exam.csproj.CoreCompileInputs.cache
+C:\Users\Trinh Quoc\source\repos\exam\obj\Debug\net6.0\exam.dll
+C:\Users\Trinh Quoc\source\repos\exam\obj\Debug\net6.0\refint\exam.dll
+C:\Users\Trinh Quoc\source\repos\exam\obj\Debug\net6.0\exam.pdb
+C:\Users\Trinh Quoc\source\repos\exam\obj\Debug\net6.0\exam.genruntimeconfig.cache
+C:\Users\Trinh Quoc\source\repos\exam\obj\Debug\net6.0\ref\exam.dll
